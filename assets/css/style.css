@@ -26,7 +26,7 @@
 
 .card__container{
   
-    width: 400px;
+    width: 350px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 250px;
@@ -35,7 +35,7 @@
 .top__background img{
     position: relative;
     border-radius: 10px 10px 0 0;
-    width: 400px;
+    width: 350px;
     top: 5px
 }
 
