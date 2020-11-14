@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+/* COLORS */
+:root{
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+
+.main__container{
+    background-image: url(/assets/img/bg-pattern-bottom.svg),  url(/assets/img/bg-pattern-top.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position:left 350px top 500px, right 300px bottom 400px; 
+    background-size: 100%, 100%;
+    background-attachment: fixed, fixed;
+    height: 100vh;
+    background-color: var(--Dark-cyan);
+}
+
+.card__container{
+  
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 250px;
+}
+
+.top__background img{
+    position: relative;
+    border-radius: 10px 10px 0 0;
+    width: 400px;
+    top: 5px
+}
+
+.profile{
+    text-align: center;
+    background-color: #fff;
+}
+
+.profile h3{
+    font-size: 18px;
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+
+.profile h3 span{
+    font-weight: 400;
+    color: var(--Dark-grayish-blue);
+}
+
+.profile p{
+    font-size: 1rem;
+    padding-bottom: 30px;
+    font-weight: 400;
+    color: var(--Dark-grayish-blue);
+}
+
+.profile img{
+    position: relative;
+    bottom: 50px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+
+.followers__count{
+    display: flex;
+    padding: 40px 40px 10px 40px;
+
+    justify-content: space-around;
+    background-color: #fff;
+    border-radius: 0 0 10px 10px;
+}
+
+.followers__count h3{
+    font-size: 18px;
+    text-align: center;
+    font-weight: 700;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.followers__count p{
+    font-size: .8rem;
+    padding-bottom: 20px;
+    font-weight: 400;
+    color: var(--Dark-grayish-blue);
+}
+
+
+.challenge{
+    padding-top: 20px;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 900px){
+    .main__container{
+        background-position:left 350px top 500px, right 200px bottom 300px; 
+        background-size: 100%, 100%;
+    }
+}
+
+
+@media screen and (max-width: 600px){
+
+    .main__container{
+        background-position:left 150px top 500px, right 200px bottom 500px; 
+        background-size: 100%, 100%;
+    }
+
+    .card__container{
+  
+        width: 300px;
+        padding-top: 100px;
+    }
+
+    .top__background img{
+        width: 300px;
+    }
+
+    .challenge{
+        font-size: 10px;
+    }
+}
+
+
