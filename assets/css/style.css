@@ -15,21 +15,26 @@
 
 
 .main__container{
-    background-image: url(/assets/img/bg-pattern-bottom.svg),  url(/assets/img/bg-pattern-top.svg);
+    background-image: url(/assets/img/bg-pattern-top.svg), url(/assets/img/bg-pattern-bottom.svg);
     background-repeat: no-repeat, no-repeat;
-    background-position:left 350px top 500px, right 300px bottom 400px; 
-    background-size: 100%, 100%;
-    background-attachment: fixed, fixed;
-    height: 100vh;
+    background-position: right 50vw bottom 50vh, left 35vw top 55vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: var(--Dark-cyan);
+    overflow: hidden;
 }
 
+
+
 .card__container{
-  
     width: 350px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 250px;
+
+    
 }
 
 .top__background img{
@@ -101,24 +106,22 @@
 
 
 @media screen and (max-width: 900px){
-    .main__container{
+    /* .main__container{
         background-position:left 350px top 500px, right 200px bottom 300px; 
         background-size: 100%, 100%;
-    }
+    } */
 }
 
 
 @media screen and (max-width: 600px){
 
-    .main__container{
+    /* .main__container{
         background-position:left 150px top 500px, right 200px bottom 500px; 
         background-size: 100%, 100%;
-    }
+    } */
 
     .card__container{
-  
         width: 300px;
-        padding-top: 100px;
     }
 
     .top__background img{
